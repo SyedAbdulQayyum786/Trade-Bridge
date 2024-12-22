@@ -1,0 +1,287 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.trade-bridge{
+  text-align: center;
+  color:black;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.back-ground {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.back-ground::before {
+  content: "";
+  background-image: url('front.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it to the back */
+}
+.body1 {
+  background-image: url('front.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed; /* Keep the background fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.body2 {
+  background-image: url('front.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed; /* Keep the background fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+.login-card {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(0px);
+  max-width: 400px;
+  width: 100%;
+  top:30%; 
+  left:40%;
+  text-align: center;
+  border-color: black;
+}
+.bo{
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+  text-align: start;
+}
+.custom-input {
+  height: 50px; 
+  font-size: 20px;
+  
+}
+.maincontainer {
+  display: flex;
+  height:89.1vh;
+}
+
+.aboutus {
+  background-image: url('default.png');
+  background-position: left;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.abouttext {
+  background-image: url('front.jpg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.text-content {
+  text-align: center;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: white;
+}
+
+.text-content p {
+  margin: 150px 0 0; 
+}
+
+/* Sidebar Styles */
+.sidebar {
+  min-height: 100vh;
+  width: 250px;
+  background-color: #28a745; /* Green background color */
+  color: #fff; /* White text color */
+}
+
+.user-info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.navigation-links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.navigation-links li {
+  margin-bottom: 10px;
+}
+
+.navigation-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navigation-links a:hover {
+  color: #ffd700; /* Change color on hover to gold (adjust as needed) */
+}
+
+
+.logout-button {
+  text-align: center;
+  padding: 10px;
+  background-color: #dc3545; 
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333; 
+}
+
+/* Bottom Logout Button */
+.bottom-logout-button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+.userhome {
+  display: flex; 
+}
+
+.AddGig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll{
+
+  height: 100vh; 
+  overflow-y: auto;
+
+
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.center-icons {
+  max-width: 600px; 
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon i {
+  font-size: 48px; /* Adjust the font size of the icons */
+  margin-bottom: 10px;
+}
+.blink-me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
